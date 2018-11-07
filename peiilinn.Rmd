@@ -83,3 +83,23 @@ StuDF[c(1,4),]
 StuDF[c(1,4),c(2,3)]
 
 ```
+
+```{r}
+library(readr)
+collegeData <- read_csv("https://quality.data.gov.tw/dq_download_csv.php?nid=6231&md5_url=dda8fca407131483c1d8cbf3d61cf793")
+```
+
+```
+```{r}
+library(dplyr)
+mutate(
+  collegeData,
+  學校代碼 = as.factor(學校代碼),
+  學校名稱 = as.factor(學校名稱)
+  ) -> collegeData2
+```
+
+```{r}
+
+```
+
