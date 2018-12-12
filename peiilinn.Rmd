@@ -32,10 +32,6 @@ library(googlesheets)
 ```
 
 ```{r}
-gs_auth(new_user = TRUE)
-```
-
-```{r}
 studentID <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/studentID.csv")
 ```
 
